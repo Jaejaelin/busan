@@ -157,11 +157,13 @@ li:hover {
     color: rgb(82, 82, 82);
 }
 .service_text a{
-    color: rgb(82, 82, 82);
-    margin: 10px 0;
+    color: rgba(250, 185, 6, 0.993);
+    margin: 2px 0;
     font-size: 18px;
     display: inline-block;
     text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
 }
 
 
