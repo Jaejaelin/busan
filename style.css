@@ -279,12 +279,13 @@ li:hover {
     text-decoration-thickness: 3px;
     text-underline-offset:6px;
 }
-.map_text:nth-child(2){
-    font-weight: bold;
-}
+
 .map_text p{
     color: rgb(105, 105, 105);
     line-height: 1.5;
+}
+.map_text p:nth-child(2){
+    font-weight: bold;
 }
 
 
