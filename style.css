@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
     --color-main: rgb(61, 153, 240);
     --color-sub: #fddb43;
@@ -12,6 +12,10 @@
 }
 body {
     font-family: 'Rubik', sans-serif;
+}
+.busan_map {
+    max-width: 100%;
+    height: auto;
 }
 
 /*-------------------네비메뉴---------------*/
@@ -180,53 +184,62 @@ li:hover {
     padding: 0;
     border-radius: 15px;
 }
-
 .content {
     width: 1200px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .card {
     width: 350px;
-    height: 360px;
+    height: 430px; 
     margin: 25px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(121, 121, 121);
 }
-
+.card_img{
+    width: 100%;
+    height: 55%;
+    position: relative;
+}
 .card img {
     width: 100%;
-    height: 60%;
+    height: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
 }
 
-.card_text {
+.card_text{
     width: 100%;
-    height: 100%;
+    height: 45%;
     position: relative;
 }
 
 .card_text h2 {
-    margin: 0;
+    margin: 10px 0 0;
     padding-left: 10px;
     color: rgb(75, 75, 75);
 }
-
-.card:nth-child(2) h2,
-/*글씨체가 큰 것들만*/
-.card:nth-child(4) h2 {
-    font-size: 20px;
-    padding-top: 3px;
-}
-
-.card_text p {
+.card_text p,a{
     margin: 0;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     color: rgb(77, 77, 77);
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: 'Roboto', sans-serif;
+}
+.card_text a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(238, 185, 10);
+    font-weight: bold;
+    margin-top: 5px;
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
     font-size: 15px;
 }
 
@@ -234,12 +247,13 @@ li:hover {
     text-decoration: none;
     font-size: 13px;
     color: rgb(250, 49, 49);
-    width: 87px;
-    padding: 3px 4px;
+    width: 88px;
+    padding: 4px 7px 1px;
     background-color: gold;
     font-weight: bold;
     position: absolute;
-    right: 5px;
+    top: 10px;
+    right: 10px;
     border-radius: 5px;
     border: 1px solid rgb(255, 120, 71);
 }
@@ -301,8 +315,9 @@ li:hover {
     }
 
     .busanpass {
-        font-size: 11px;
-        width: 73px;
+        font-size: 12px;
+        width: 82px;
+        right: 10px;
     }
 
     /*글씨체가 큰 것들만*/
@@ -402,23 +417,25 @@ li:hover {
         display: flex;
     }
 
+    /*-----------지역추천--------------*/
+
     .city {
         width: 260px;
         font-size: 40px;
     }
 
     .content {
-        width: 400px;
+        width: auto;
     }
 
     .card {
-        width: 350px;
-        margin: 25px;
-        height: 360px;
+        width: 320px;
+        height: 430px;
+        margin: 15px;
     }
     .busanpass {
         font-size: 13px;
-        width: 87px;
+        width: 88px;
     }
     .card:nth-child(2) h2,/*글씨체가 큰 것들만*/ 
     .card:nth-child(4) h2 {
