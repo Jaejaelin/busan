@@ -496,11 +496,10 @@ li:hover {
     }
     .service_item p{
         line-height: 1.6;
-        font-size: 15px;
+        font-size: 18px;
         color: rgb(82, 82, 82);
     }
     .service_text a{
-        color: rgb(82, 82, 82);
         margin: 10px 0;
         font-size: 18px;
         display: inline-block;
