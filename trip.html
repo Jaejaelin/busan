@@ -9,6 +9,8 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
 </head>
 
 <body>
@@ -31,11 +33,24 @@
         </div>
     </div>
 
+
     <div class="city">
         <h2>Busan</h2>
     </div>
+
+    <img src="./images/map.png" usemap="#image-map" class="busan_map">
+
+    <map name="image-map">
+        <area target="_blank" alt="" title="" href="#lotte" coords="956,501,693,454" shape="rect">
+        <area target="_blank" alt="" title="" href="#temple" coords="943,505,1144,551" shape="rect">
+        <area target="_blank" alt="" title="" href="#sky" coords="455,569,805,625" shape="rect">
+        <area target="_blank" alt="" title="" href="#seafood" coords="204,698,552,754" shape="rect">
+        <area target="_blank" alt="" title="" href="#cable" coords="315,758,552,806" shape="rect">
+        <area target="_blank" alt="" title="" href="#train" coords="811,564,1082,622" shape="rect">
+    </map>
+    
     <div class="content">
-        <div class="card">
+        <div class="card" id="temple">
             <div class="card_img">
                 <img src="./images/temple.jpg" alt="temple">
             </div>
@@ -43,10 +58,11 @@
                 <h2>Haedong Yonggung Temple</h2>
                 <p>Diese großartige Attraktion bietet den Besuchern die seltene Gelegenheit, einen Tempel an der Küste
                     zu sehen; die meisten Tempel in Korea befinden sich in den Bergen.</p>
-                <a href="https://maps.app.goo.gl/MnLv5pR93TM7356w6" target="_blank"><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://maps.app.goo.gl/MnLv5pR93TM7356w6" target="_blank"><i class="fa-solid fa-location-dot"
+                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="train">
             <div class="card_img">
                 <a class="busanpass" href="https://www.visitbusanpass.com/attractions/_detail?id=GO0000000042"
                     target="_blank">BUSANPASS</a>
@@ -56,10 +72,11 @@
                 <h2>Haeundae Beach train</h2>
                 <p>Der Haeundae Blue Line Park Beach Train, der entlang der Küstenlandschaft fährt, indem er die alten
                     Bahnanlagen der Donghae-Nambu-Linie auf einem 4,8 km langen Abschnitt umgestaltet.</p>
-                    <a href="https://maps.app.goo.gl/o1AiCSwf4HaMA5ne9" target="_blank"><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://maps.app.goo.gl/o1AiCSwf4HaMA5ne9" target="_blank"><i class="fa-solid fa-location-dot"
+                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="cable">
             <div class="card_img">
                 <a class="busanpass" href="https://www.visitbusanpass.com/attractions/_detail?id=GO0000000267"
                     target="_blank">BUSANPASS</a>
@@ -69,7 +86,8 @@
                 <h2>Songdo Cable Car</h2>
                 <p>Sie überquert 1,62 Kilometer Ozean, erreicht Höhen von bis zu 86 Metern und bietet aufregende Fahrten
                     durch turbulentes Wasser und zerklüftete Klippen.</p>
-                    <a href="https://maps.app.goo.gl/tEH91U6y2BgmGAqE7" target="_blank"><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://maps.app.goo.gl/tEH91U6y2BgmGAqE7" target="_blank"><i class="fa-solid fa-location-dot"
+                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
             </div>
         </div>
         <div class="card" id="lotte">
@@ -82,10 +100,11 @@
                 <h2>Lotte World Adventure</h2>
                 <p>Lotte World Busan, ein Outdoor-Themenpark, verfügt über 6 Bereiche und 17 Arten von attraktiven
                     Attraktionen unter dem Motto "Märchenreich".</p>
-                    <a href="https://maps.app.goo.gl/3tk6ePjt7UUC3iur6" target="_blank"><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://maps.app.goo.gl/3tk6ePjt7UUC3iur6" target="_blank"><i class="fa-solid fa-location-dot"
+                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="seafood">
             <div class="card_img">
                 <img src="./images/fish.JPG" alt="temple">
             </div>
@@ -93,10 +112,11 @@
                 <h2>Jagalchi Market</h2>
                 <p>Der Jagalchi-Markt an der Küstenstraße im Busaner Stadtteil Jung-gu ist Koreas größter Markt für
                     Meeresfrüchte, auf dem sowohl lebende als auch getrocknete Fische verkauft werden.</p>
-                    <a href="https://maps.app.goo.gl/ovAcgMKCGBXBwnJR8" target="_blank"><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://maps.app.goo.gl/ovAcgMKCGBXBwnJR8" target="_blank"><i class="fa-solid fa-location-dot"
+                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="sky">
             <div class="card_img">
                 <a class="busanpass" href="https://www.visitbusanpass.com/attractions/_detail?id=GO0000000269"
                     target="_blank">BUSANPASS</a>
@@ -106,7 +126,8 @@
                 <h2>Busan X the Sky</h2>
                 <p>Es ist das beste und größte Observatorium Koreas, von dem aus man den weiten Blick auf das Meer von
                     Haeundae und die herrliche Stadtansicht von Busan genießen kann.</p>
-                    <a href="https://maps.app.goo.gl/MLHY9bA9ybFqjvA29" target="_blank"><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://maps.app.goo.gl/MLHY9bA9ybFqjvA29" target="_blank"><i class="fa-solid fa-location-dot"
+                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
             </div>
         </div>
     </div>
