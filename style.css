@@ -642,13 +642,7 @@ li:hover {
         display: flex;
     }
 
-    .busan_map{
-        margin: 0 auto;
-        width:400px;
-        display: block;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+    
     /*------------------지역추천 / 지도--------------------*/
     .korea_map{
         width: 375px;
@@ -710,7 +704,13 @@ li:hover {
         width: 100%;
         font-size: 40px;
     }
-
+    .busan_map{
+        margin: 0 auto;
+        width:400px;
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     .gyeongju h2{
         width: 360px;
     }
@@ -767,6 +767,7 @@ li:hover {
         flex-wrap: wrap;
         margin: 60px 0;
         padding: 20px;
+        padding-bottom: 40px;
     }
     .service_text{
         width: 380px;
@@ -774,10 +775,6 @@ li:hover {
     .service_img{
         width: 340px;
     }
-    /*
-    .service_item img:nth-child(2){
-        height: 220px;
-    }*/
     .service_item h2{
         margin: 20px 0;
         font-size: 23px;
