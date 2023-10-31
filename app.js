@@ -29,3 +29,38 @@ document.querySelectorAll('area').forEach(function(area) {
         }
     });
 });
+
+
+// 맨 위로가기 버튼
+$(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 500) {
+            $('#moveTop').fadeIn();
+        } else {
+            $('#moveTop').fadeOut();
+        }
+    });
+    
+    $("#moveTop").click(function() {
+        $('html, body').animate({
+            scrollTop : 0
+        }, 400);
+        return false;
+    });
+});
+
+
+
+
+
+const open = ()=>{
+    document.querySelector(".modal").classList.remove("hidden");
+}
+
+const close = ()=>{
+    document.querySelector(".modal").classList.add("hidden");
+}
+
+document.querySelector(".open_button").addEventListener("click",open);
+document.querySelector(".close_button").addEventListener("click",close);
+//document.querySelector(".window").addEventListener("click", close);

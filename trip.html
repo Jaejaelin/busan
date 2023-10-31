@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./style.css" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+    <!---맨위로 제이쿼리---->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -25,16 +27,44 @@
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./location.html">LOCATION</a></li>
                 <li><a href="./trip.html">TRIP</a></li>
-                <li><a href="">BUSANPASS</a></li>
+                <li><a href="./ferry.html">FERRY</a></li>
             </ul>
             <a href="#" class="nav_icon">
                 <i class="fa-solid fa-bars"></i>
             </a>
         </div>
     </div>
+    <div id="moveTop"><i class="fa-solid fa-chevron-up"></i></div>
+
+    <div class="korea_map">
+        <div class="korea_sub">
+            <div class="korea_sub_text">
+                <h3>Korea Tourist Map</h3>
+                <p>Wählen Sie die Stadt, die Sie interessiert!</p>
+                <p><i class="fa-solid fa-star-of-life" style="color: rgb(252, 91, 91); font-size: 12px;"></i>
+                    Touristenattraktionen, <br />die durch den <span>BusanPass</span> abgedeckt sind,<br /> sind in der
+                    oberen rechten Ecke markiert.<br /> Klicken Sie auf das Busan-Pass-Symbol, um weitere Informationen
+                    zu erhalten.</p>
+            </div>
+        </div>
+        <div class="korea_img">
+            <img src="./images/korea.png">
+            <div class="korea_text">
+                <a href="#seoul" class="korea_city seoul"><i class="fa-solid fa-location-dot"
+                        style="color: rgb(250, 85, 85);"></i> SEOUL</a>
+                <a href="#busan" class="korea_city busan">BUSAN <i class="fa-solid fa-location-dot"
+                        style="color: rgb(250, 85, 85);"></i></a>
+                <a href="#gyeongju" class="korea_city gyeongju">GYEONGJU <i class="fa-solid fa-location-dot"
+                        style="color: rgb(250, 85, 85);"></i></a>
+            </div>
+        </div>
+
+    </div>
 
 
-    <div class="city">
+    <!----------------------------부산------------------------------->
+
+    <div class="city" id="busan">
         <h2>Busan</h2>
     </div>
 
@@ -48,7 +78,7 @@
         <area target="_blank" alt="" title="" href="#cable" coords="315,758,552,806" shape="rect">
         <area target="_blank" alt="" title="" href="#train" coords="811,564,1082,622" shape="rect">
     </map>
-    
+
     <div class="content">
         <div class="card" id="temple">
             <div class="card_img">
@@ -58,8 +88,10 @@
                 <h2>Haedong Yonggung Temple</h2>
                 <p>Diese großartige Attraktion bietet den Besuchern die seltene Gelegenheit, einen Tempel an der Küste
                     zu sehen; die meisten Tempel in Korea befinden sich in den Bergen.</p>
-                <a href="https://maps.app.goo.gl/MnLv5pR93TM7356w6" target="_blank"><i class="fa-solid fa-location-dot"
-                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a class="googleMap" href="https://maps.app.goo.gl/MnLv5pR93TM7356w6" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://naver.me/5IFsgIgs" class="naverMap" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
             </div>
         </div>
         <div class="card" id="train">
@@ -72,8 +104,10 @@
                 <h2>Haeundae Beach train</h2>
                 <p>Der Haeundae Blue Line Park Beach Train, der entlang der Küstenlandschaft fährt, indem er die alten
                     Bahnanlagen der Donghae-Nambu-Linie auf einem 4,8 km langen Abschnitt umgestaltet.</p>
-                <a href="https://maps.app.goo.gl/o1AiCSwf4HaMA5ne9" target="_blank"><i class="fa-solid fa-location-dot"
-                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a class="googleMap" href="https://maps.app.goo.gl/o1AiCSwf4HaMA5ne9" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://naver.me/xZDOx53n" class="naverMap" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
             </div>
         </div>
         <div class="card" id="cable">
@@ -86,8 +120,10 @@
                 <h2>Songdo Cable Car</h2>
                 <p>Sie überquert 1,62 Kilometer Ozean, erreicht Höhen von bis zu 86 Metern und bietet aufregende Fahrten
                     durch turbulentes Wasser und zerklüftete Klippen.</p>
-                <a href="https://maps.app.goo.gl/tEH91U6y2BgmGAqE7" target="_blank"><i class="fa-solid fa-location-dot"
-                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a class="googleMap" href="https://maps.app.goo.gl/tEH91U6y2BgmGAqE7" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://naver.me/56ID5h8S" class="naverMap" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
             </div>
         </div>
         <div class="card" id="lotte">
@@ -100,8 +136,10 @@
                 <h2>Lotte World Adventure</h2>
                 <p>Lotte World Busan, ein Outdoor-Themenpark, verfügt über 6 Bereiche und 17 Arten von attraktiven
                     Attraktionen unter dem Motto "Märchenreich".</p>
-                <a href="https://maps.app.goo.gl/3tk6ePjt7UUC3iur6" target="_blank"><i class="fa-solid fa-location-dot"
-                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a class="googleMap" href="https://maps.app.goo.gl/3tk6ePjt7UUC3iur6" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://naver.me/GQ4NmSYo" class="naverMap" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
             </div>
         </div>
         <div class="card" id="seafood">
@@ -112,8 +150,10 @@
                 <h2>Jagalchi Market</h2>
                 <p>Der Jagalchi-Markt an der Küstenstraße im Busaner Stadtteil Jung-gu ist Koreas größter Markt für
                     Meeresfrüchte, auf dem sowohl lebende als auch getrocknete Fische verkauft werden.</p>
-                <a href="https://maps.app.goo.gl/ovAcgMKCGBXBwnJR8" target="_blank"><i class="fa-solid fa-location-dot"
-                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a class="googleMap" href="https://maps.app.goo.gl/ovAcgMKCGBXBwnJR8" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://naver.me/5s9mFoDe" class="naverMap" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
             </div>
         </div>
         <div class="card" id="sky">
@@ -126,10 +166,227 @@
                 <h2>Busan X the Sky</h2>
                 <p>Es ist das beste und größte Observatorium Koreas, von dem aus man den weiten Blick auf das Meer von
                     Haeundae und die herrliche Stadtansicht von Busan genießen kann.</p>
-                <a href="https://maps.app.goo.gl/MLHY9bA9ybFqjvA29" target="_blank"><i class="fa-solid fa-location-dot"
-                        style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a class="googleMap" href="https://maps.app.goo.gl/MLHY9bA9ybFqjvA29" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                <a href="https://naver.me/5qRAA4B8" class="naverMap" target="_blank"><i
+                        class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
             </div>
         </div>
+
+
+        <!--------------------모달---------------------->
+
+        <button class="open_button">팝업열기</button>
+        <div class="modal hidden">
+            <div class="window">
+                <div class="modal_pop">
+                    <div class="modal_text">
+                        <p>Hello</p>
+
+                        <button class="close_button">팝업닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!------------------서울------------------------------->
+        <div class="city" id="seoul">
+            <h2>Seoul</h2>
+        </div>
+        <div class="content">
+            <div class="card" id="sky">
+                <div class="card_img">
+                    <img src="./images/museum.JPG" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>National Museum of Korea</h2>
+                    <p>Das Nationalmuseum von Korea verfügt über eine umfangreiche Sammlung von über 420 000 Objekten. Es enthält Artefakte zu einer Vielzahl von Themen, darunter Kunst und Kultur.</p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/c4SVTLZiqVNaCv8x8" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://naver.me/5eGTvcXC" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+            <div class="card" id="sky">
+                <div class="card_img">
+
+                    <img src="./images/palace.JPG" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Gyeongbokgung Palace</h2>
+                    <p>Der Gyeongbokgung-Palast ist der schönste und größte der fünf Paläste. Die hervorstehenden Steinmuster der Haupthalle zeigen typische künstlerische Stile der damaligen Zeit.</p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/JCXFXcDxaAYcBZkA6" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://naver.me/FLBKTWSB" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+            <div class="card" id="sky">
+                <div class="card_img">
+                    <img src="./images/local.jpg" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Namdaemun Market</h2>
+                    <p>Der 1964 eröffnete Namdaemun-Markt ist der größte traditionelle Markt Koreas mit Geschäften, die
+                        eine große Vielfalt an Waren anbieten. Alle Waren werden zu erschwinglichen Preisen verkauft.
+                    </p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/Dy7HC7LiB4pRkygF6" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://naver.me/x0aUDbL5" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+            <div class="card" id="sky">
+                <div class="card_img">
+                    <img src="./images/water.jpg" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Cheonggyecheon Stream</h2>
+                    <p>Der Cheonggyecheon ist ein 11 km langer Fluss, der durch das Zentrum von Seoul fließt. 2003 wurde
+                        die Überführung entfernt und der Fluss in seinen heutigen Zustand zurückversetzt.</p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/AFHnDWBdnSV87K789" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://naver.me/x50GMVgX" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+
+            <div class="card" id="sky">
+                <div class="card_img">
+
+                    <img src="./images/forest.jpg" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Seoul Forest</h2>
+                    <p>Mit einer Fläche von rund 595 000 Quadratmetern ist der Seouler Wald ein umweltfreundlicher Ort,
+                        der nicht nur bei den Einwohnern Seouls, sondern auch bei Touristen, die Seoul besuchen, beliebt
+                        ist.</p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/CBFXzwTBMXnNqNX89" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://naver.me/xC6ir63v" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+            <div class="card" id="sky">
+                <div class="card_img">
+                    <img src="./images/tower.PNG" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Namsan Seoul Tower</h2>
+                    <p>Die Aussichtsplattform des Turms bietet einen Panoramablick über Seoul und ist damit eine der beliebtesten Attraktionen für in- und ausländische Touristen.</p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/AfkYYL81JL4jLQ9HA" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://naver.me/xlW10MyG" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!------------------------경주------------------------->
+
+        <div class="city gyeongju" id="gyeongju">
+            <h2>GyeongJu</h2>
+        </div>
+        <div class="content">
+            <div class="card" id="sky">
+                <div class="card_img">
+                    <img src="./images/buddha.JPG" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Seokguram Grotto</h2>
+                    <p>Die Höhle wurde so gestaltet, dass sie mit dem linken Buddha, der auf das Ostmeer blickt, harmoniert. Sie wurde am 6. Dezember 1995 in die Liste des UNESCO-Weltkulturerbes aufgenommen.</p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/NN37iyL4YrvPYhCRA" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://naver.me/5NdqQ2cN" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+            <div class="card" id="sky">
+                <div class="card_img">
+
+                    <img src="./images/jusang.JPG" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Columnar Joint Observatory</h2>
+                    <p>Die fächerförmigen Skulpturen, die sich entlang der Küstenlinie bilden, sind ein seltener Anblick
+                        in Korea und auf der ganzen Welt und wurden 2012 zum Naturdenkmal erklärt.</p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/t7Hj4ZecbM2dB7Rm7" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://naver.me/FWJfnuBm" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+            <div class="card" id="sky">
+                <div class="card_img">
+                    <img src="./images/hwang.JPG" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Hwangnidan Street</h2>
+                    <p>Die Straße ist bei der jüngeren Generation Südkoreas sehr beliebt. In den traditionellen
+                        Hanok-Gebäuden sind zahlreiche Restaurants, Cafés, Fotostudios und Geschäfte untergebracht.
+                    </p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/MLHY9bA9ybFqjvA29" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://naver.me/5lZCA4xx" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+            <div class="card" id="sky">
+                <div class="card_img">
+                    <img src="./images/water.jpg" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Cheonggyecheon Stream</h2>
+                    <p>Der Cheonggyecheon ist ein 11 km langer Fluss, der durch das Zentrum von Seoul fließt. 2003 wurde
+                        die Überführung entfernt und der Fluss in seinen heutigen Zustand zurückversetzt.</p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/k5HY4osfqBdhGyou9" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://maps.app.goo.gl/MnLv5pR93TM7356w6" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+
+            <div class="card" id="sky">
+                <div class="card_img">
+
+                    <img src="./images/forest.jpg" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Seoul Forest</h2>
+                    <p>Mit einer Fläche von rund 595 000 Quadratmetern ist der Seouler Wald ein umweltfreundlicher Ort,
+                        der nicht nur bei den Einwohnern Seouls, sondern auch bei Touristen, die Seoul besuchen, beliebt
+                        ist.</p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/MLHY9bA9ybFqjvA29" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://maps.app.goo.gl/MnLv5pR93TM7356w6" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+            <div class="card" id="sky">
+                <div class="card_img">
+                    <img src="./images/tower.PNG" alt="temple">
+                </div>
+                <div class="card_text">
+                    <h2>Namsan Seoul Tower</h2>
+                    <p>Die Aussichtsplattform des Turms bietet einen Panoramablick über Seoul und ist damit eine der beliebtesten Attraktionen für in- und ausländische Touristen.</p>
+                    <a class="googleMap" href="https://maps.app.goo.gl/MLHY9bA9ybFqjvA29" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Google Maps</a>
+                    <a href="https://maps.app.goo.gl/MnLv5pR93TM7356w6" class="naverMap" target="_blank"><i
+                            class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Naver Map</a>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
 

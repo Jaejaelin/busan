@@ -84,7 +84,26 @@ li:hover {
     display: none;
 }
 
-/*--------------------메인화면---------------------*/
+#moveTop{
+    font-size: 30px;
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    display: none;
+    z-index: 5555;
+    cursor: pointer;
+}
+#moveTop i{
+    background-color: rgba(255, 221, 27, 0.5);
+    color: rgb(255, 130, 47);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+/*--------------------메인화면 테이블---------------------*/
 .table_wrap{
     width: 1000px;
     margin: 0 auto;
@@ -171,24 +190,178 @@ li:hover {
 
 
 
-/*---------------------추천장소--------------------*/
+
+/*-----------------------------모달-------------------------*/
+.open_button{
+    display: none;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+    z-index: 1000;
+}
+/* .modal .bg{
+    width: 100%;
+    height: 100%;
+    
+} */
+.window{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .6);
+}
+.modal_pop{
+    /* position: relative; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width:500px;
+    height: 500px;
+    padding: 15px;
+}
+.modal_text{
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-items: center;
+    background-color: #88d9ff;
+}
+.modal_pop button{
+    display: block;
+    width: 80px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.hidden{
+    display: none;
+}
+
+/*-----------------------------모달-------------------------*/
+
+
+
+
+
+/*---------------------추천장소 / 지도맵--------------------*/
+
+.korea_map{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 800px;
+}
+
+.korea_img{
+    width: 50%;
+    position: relative;
+}
+.korea_img img{
+    width: 100%;
+    filter: drop-shadow(3px 3px 6px rgb(185, 185, 185));
+}
+.korea_sub{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.korea_sub_text h3{
+    /* color: rgb(102, 102, 102); */
+    color: var(--color-main);
+    font-size: 41px;
+    margin: 30px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.korea_sub_text p{
+    font-size: 18px;
+    margin: 0 auto;
+    color: rgb(110, 110, 110);
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+.korea_sub_text p:nth-child(2){
+    /* font-weight: bold; */
+    font-size: 19px;
+    color: rgb(100, 100, 100);
+}
+.korea_sub_text p:nth-child(3){
+    padding-top: 30px;
+    font-size: 17px;
+    margin: 0 auto;
+}
+
+.korea_sub_text span{
+    /* color:rgb(250, 131, 196); */
+    text-decoration: underline var(--color-sub);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset:3.4px;
+    /* font-weight: bold; */
+}
+.korea_city{
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(42, 134, 255);
+    font-weight: bold;
+    position: absolute;
+    font-size: 22px;
+    text-shadow: 2px 2px 1px rgb(255, 224, 46);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.seoul{
+    top: 110px;
+    left: 100px;
+}
+.busan{
+    top: 395px;
+    left: 235px;
+}
+.gyeongju{
+    top: 305px;
+    left: 225px;
+}
+
+/*---------------------추천장소 / 카드--------------------*/
 .city {
-    width: 320px;
+    width: 100%;
+    display: block;
     text-align: center;
     font-size: 55px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 20px;
     color: var(--color-main);
-
 }
 
 .city h2 {
+    width: 320px;
+    display: inline-block;
     margin: 0;
     background-color: var(--color-sub);
     padding: 0;
     border-radius: 15px;
 }
+.gyeongju h2{
+    width: 450px;
+    padding: 8px 0;
+}
+
 .content {
     width: 1200px;
     display: flex;
@@ -239,13 +412,20 @@ li:hover {
 .card_text a{
     display: inline-block;
     text-decoration: none;
-    color: rgb(238, 185, 10);
     font-weight: bold;
     margin-top: 5px;
     position: absolute;
+    font-size: 15px;
+}
+.googleMap{
+    color: rgb(238, 185, 10);
     right: 5px;
     bottom: 20px;
-    font-size: 15px;
+}
+.naverMap{
+    color: rgb(71, 204, 9);
+    left: 5px;
+    bottom: 20px;
 }
 
 .busanpass {
@@ -263,7 +443,7 @@ li:hover {
     border: 1px solid rgb(255, 120, 71);
 }
 
-/*------------------------위치----------------------*/
+/*------------------------웨딩홀 위치----------------------*/
 .map_wrap{
     width: 1200px;
     margin: 0 auto;
@@ -312,6 +492,45 @@ li:hover {
     }
     .content {
         width: 870px;
+    }
+
+    .korea_map{
+    width: 800px;
+    }
+    .korea_sub{
+        padding-left: 10px;
+    }
+    
+    .korea_sub_text h3{
+        font-size: 38px;
+        margin: 20px 0;
+    }
+    .korea_sub_text p{
+        font-size: 18px;
+    }
+    .korea_sub_text p:nth-child(2){
+        font-size: 18px;
+    }
+    .korea_sub_text p:nth-child(3){
+        padding-top: 20px;
+        font-size: 17px;
+    }
+    .korea_city{
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .seoul{
+        top: 115px;
+        left: 100px;
+    }
+    .busan{
+        top: 400px;
+        left: 240px;
+    }
+    .gyeongju{
+        top: 305px;
+        left: 230px;
     }
 
     .card {
@@ -430,12 +649,66 @@ li:hover {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+    /*------------------지역추천 / 지도--------------------*/
+    .korea_map{
+        width: 450px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .korea_sub{
+        width: 440px;
+        margin: 0 auto;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .korea_img{
+        width: 300px;
+        margin:0 auto;
+        margin-top: 20px;
+    }
+    
+    .korea_sub_text h3{
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .korea_sub_text p{
+        font-size: 17px;
+        margin: 0 auto;
+        color: rgb(63, 63, 63);
+        line-height: 1.4;
+    }
+    .korea_sub_text p:nth-child(3){
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    .korea_city{
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .seoul{
+        top: 75px;
+        left: 75px;
+    }
+    .busan{
+        top: 290px;
+        left: 160px;
+    }
+    .gyeongju{
+        top: 225px;
+        left: 145px;
+    }
 
     /*-----------지역추천--------------*/
 
     .city {
-        width: 260px;
+        width: 100%;
         font-size: 40px;
+    }
+
+    .gyeongju h2{
+        width: 360px;
     }
 
     .content {
