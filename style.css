@@ -290,7 +290,6 @@ li:hover {
 .korea_sub_text p{
     font-size: 18px;
     margin: 0 auto;
-    color: rgb(110, 110, 110);
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
 }
@@ -303,6 +302,7 @@ li:hover {
     padding-top: 30px;
     font-size: 17px;
     margin: 0 auto;
+    color: rgb(119, 119, 119);
 }
 
 .korea_sub_text span{
@@ -651,14 +651,16 @@ li:hover {
     }
     /*------------------지역추천 / 지도--------------------*/
     .korea_map{
-        width: 450px;
+        width: 375px;
         flex-wrap: wrap;
         margin-top: 50px;
         margin-bottom: 100px;
     }
     .korea_sub{
-        width: 440px;
+        width: 370px;
         margin: 0 auto;
+        margin-bottom: 20px;
+        justify-content: center;
         padding-right: 0px;
         padding-left: 0px;
     }
@@ -673,14 +675,16 @@ li:hover {
         margin: 20px 0;
     }
     .korea_sub_text p{
-        font-size: 17px;
         margin: 0 auto;
         color: rgb(63, 63, 63);
         line-height: 1.4;
     }
+    .korea_sub_text p:nth-child(2){
+        font-size: 17px;
+    }
     .korea_sub_text p:nth-child(3){
         padding-top: 20px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .korea_city{
         padding: 5px;
