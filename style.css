@@ -473,7 +473,63 @@ li:hover {
     font-weight: bold;
 }
 
+/*----------페리----------------------------*/
 
+   .ferry_wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.ferry_item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ferry_title{
+    width:600px;
+    text-align: center;
+}
+.ferry_title h4{
+    font-size: 35px;
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    color:#459cff
+}
+.ferry_title img{
+    width: 400px;
+}
+.ferry_text{
+    width:600px;
+    /* text-align: center; */
+    padding:5px;
+    font-family: 'Roboto', sans-serif;
+    color:#535353;
+    line-height: 1.4;
+}
+.ferry_text h5{
+    font-size: 21px;
+    padding:4px 0;
+}
+.ferry_text hr{
+    border: none;
+    border-top: 1px solid rgb(161, 161, 161);
+    margin: 0 0 7px;
+}
+.ferry_text a{
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 4px;
+    border-radius: 3px;
+    /* font-weight: bold; */
+    color: rgb(121, 121, 121);
+    display: inline-block;
+    background-color: #fff12d;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+.ferry_text img{
+    width: 100%;
+}
 
 
 
@@ -596,6 +652,27 @@ li:hover {
         color: rgb(105, 105, 105);
         line-height: 1.5;
         font-size: 16px;
+    }
+
+    /*----------페리----------------------------*/
+
+    .ferry_wrap{
+        width: 700px;
+    }
+    .ferry_title{
+        width:350px;
+    }
+    .ferry_title h4{
+        font-size: 26px;
+        padding: 25px 0 10px;
+        margin: 0;
+    }
+    .ferry_title img{
+        width: 100%;
+    }
+    .ferry_text{
+        width:350px;
+    
     }
 }
 
@@ -820,6 +897,32 @@ li:hover {
     .map_text p{
         line-height: 1.5;
         padding: 5px 0;
+    }
+
+
+    /*----------페리----------------------------*/
+
+    .ferry_wrap{
+        width: 350px;
+        flex-direction: column;
+    }
+    .ferry_item{
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .ferry_title{
+        width:350px;
+    }
+    .ferry_title h4{
+        font-size: 26px;
+        padding: 25px;
+    }
+    .ferry_title img{
+        width: 100%;
+    }
+    .ferry_text{
+        width:350px;
+    
     }
 
     
