@@ -14,6 +14,27 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+#moveTop{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color:rgb(114, 114, 114);
+    font-size: 22px;
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    background-color: rgba(255, 233, 162, 0.829);
+    opacity: 0;
+    transition: 0.7s ease;
+}
+#moveTop.on{
+    opacity: 1;
+    cursor: pointer;
+}
+
 /*-------------------네비메뉴---------------*/
 .navbar {
     width: 100%;
@@ -232,11 +253,12 @@ li {
     margin-bottom: 20px;
     position: relative;
     display: flex;
-    width: 100%;
+    width: 800px;
 }
 
 .korea_map img{
     width: 50%;
+    display: none;
 }
 .korea_sub{
     width: 50%;
@@ -245,7 +267,12 @@ li {
     text-align: center;
     padding-right: 50px;
 }
-
+.korea_text{
+    width: 50%;
+    height: 600px;
+    background-image: url('./images/korea.png');
+    background-size: cover;
+}
 .korea_sub_text h3{
     color: rgb(0, 132, 255);
     font-size: 40px;
@@ -388,7 +415,7 @@ li {
 .map_wrap{
     width: 1200px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -485,6 +512,10 @@ li {
     .korea_sub_text p:nth-child(3){
         padding-top: 20px;
         font-size: 17px;
+    }
+
+    .korea_text{
+        height: 500px;
     }
     .korea_city{
         padding: 5px;
@@ -647,7 +678,7 @@ li {
     }
     
     .korea_map{
-        width: 100%;
+        width: 400px;
         flex-wrap: wrap;
         margin-top: 50px;
         margin-bottom: 100px;
@@ -678,22 +709,28 @@ li {
         padding-top: 20px;
         font-size: 16px;
     }
+
+    .korea_text{
+        margin:0 auto;
+        width: 98%;
+        height: 600px;
+    }
     .korea_city{
         padding: 5px;
         font-size: 20px;
     }
 
     .seoul{
-        top: 335px;
-        left: 150px;
+        top: 298px;
+        left: 110px;
     }
     .busan{
-        top: 550px;
-        left: 230px;
+        top: 585px;
+        left: 240px;
     }
     .gyeongju{
-        top: 485px;
-        left: 220px;
+        top: 495px;
+        left: 235px;
     }
 
     /*-----------지역추천--------------*/
@@ -816,6 +853,8 @@ li {
         line-height: 1.5;
         padding: 5px 0;
     }
+
+    
 
     
 }

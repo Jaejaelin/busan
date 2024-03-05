@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+    <div id="moveTop" onclick="scrollTopFunction()"><i class="fa-solid fa-chevron-up"></i></div>
     <div class="navbar">
         <div class="wrap">
             <div class="nav_logo">
@@ -23,10 +23,18 @@
                 <a href="./index.html">Perleberg</a>
             </div>
             <ul class="nav_menu">
-                <a href="./index.html"><li>HOME</li></a>
-                <a href="./location.html"><li>LOCATION</li></a>
-                <a href="./trip.html"><li>TRIP</li></a>
-                <a href=""><li>BUSANPASS</li></a>
+                <a href="./index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="./location.html">
+                    <li>LOCATION</li>
+                </a>
+                <a href="./trip.html">
+                    <li>TRIP</li>
+                </a>
+                <a href="./ferry.html">
+                    <li>FERRY</li>
+                </a>
             </ul>
             <a href="#" class="nav_icon">
                 <i class="fa-solid fa-bars"></i>
@@ -307,7 +315,7 @@
             </div>
             <div class="card" id="sky">
                 <div class="card_img">
-                    <img src="./images/daereungwon.jpg" alt="temple">
+                    <img src="./images/daereungwon.JPG" alt="temple">
                 </div>
                 <div class="card_text">
                     <h2>Daereungwon</h2>
@@ -347,6 +355,21 @@
 
 
     <script src="./app.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            // 스크롤 위치가 100px을 초과하면 "on" 클래스 추가, 그렇지 않으면 제거
+            if (window.scrollY > 100) {
+                document.getElementById("moveTop").classList.add("on");
+            } else {
+                document.getElementById("moveTop").classList.remove("on");
+            }
+        });
+
+        function scrollTopFunction() {
+            // 부드러운 스크롤 효과로 페이지 상단으로 이동
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 
 </html>
