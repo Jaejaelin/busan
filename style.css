@@ -232,7 +232,7 @@ li {
     margin-bottom: 20px;
     position: relative;
     display: flex;
-    width: 800px;
+    width: 100%;
 }
 
 .korea_map img{
@@ -290,9 +290,9 @@ li {
     width: 100%;
     display: block;
     text-align: center;
-    font-size: 55px;
+    font-size: 40px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 20px;
     color: var(--color-main);
 }
@@ -306,7 +306,7 @@ li {
     border-radius: 15px;
 }
 .gyeongju h2{
-    width: 450px;
+    width: 420px;
     padding: 8px 0;
 }
 
@@ -647,13 +647,13 @@ li {
     }
     
     .korea_map{
-        width: 450px;
+        width: 100%;
         flex-wrap: wrap;
         margin-top: 50px;
         margin-bottom: 100px;
     }
     .korea_sub{
-        width: 440px;
+        width: 100%;
         margin: 0 auto;
         padding-right: 0px;
         padding-left: 0px;
