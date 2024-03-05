@@ -71,7 +71,7 @@ li:hover {
 
 .nav_icon {
     position: absolute;
-    right: 8px;
+    right: 18px;
     font-size: 28px;
     color: var(--color-sub);
     padding-top: 13px;
@@ -84,25 +84,6 @@ li:hover {
     display: none;
 }
 
-#moveTop{
-    font-size: 30px;
-    position: fixed;
-    right: 2%;
-    bottom: 50px;
-    display: none;
-    z-index: 5555;
-    cursor: pointer;
-}
-#moveTop i{
-    background-color: rgba(255, 221, 27, 0.7);
-    color: rgb(255, 130, 47);
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-}
 /*--------------------메인화면 테이블---------------------*/
 .table_wrap{
     width: 1000px;
@@ -113,13 +94,15 @@ li:hover {
 .table_wrap table{
     width: 100%;
     border-collapse: collapse;
-    color: rgb(75, 75, 75);
+    color: rgb(80, 80, 80);
+    font-size: 14px;
 }
 .table_wrap table th,td{
     width:50px;
     height: 35px;
     /* border: 1px solid rgb(199, 199, 199); */
     text-align: center;
+    padding:1px;
 }
 .table_wrap table th p{
     width: 28px;
@@ -135,19 +118,67 @@ li:hover {
     background-color: rgb(236, 236, 236);
     border-radius: 10px;
 }
-.Klaus hr{border: 9px solid #88d9ff;}
-.Heidi hr{border: 9px solid #e0bfff;}
-.Bosse hr{border: 9px solid #ffcbcb;}
-.Torben hr{border: 9px solid #fff12d;}
-.Eva hr{border: 9px solid #fdb4e7;}
-.Mirja hr{border: 9px solid #beff81;}
-.Jan hr{border: 9px solid #ffd781;}
+.Klaus hr{border: 9px solid #88d9ff; border-radius: 10px;}
+.Heidi hr{border: 9px solid #e0bfff; border-radius: 10px;}
+.Bosse hr{border: 9px solid #ffcbcb; border-radius: 10px;}
+.Torben hr{border: 9px solid #fff12d; border-radius: 10px;}
+.Eva hr{border: 9px solid #fdb4e7; border-radius: 10px;}
+.Mirja hr{border: 9px solid #beff81; border-radius: 10px;}
+.Jaeya hr{border: 9px solid #ffd781; border-radius: 10px;}
+.Bjarne hr{border: 9px solid #a3c79e; border-radius: 10px;}
 .schedule{
     font-size: 14px;
     background-color: #ff58abc2;
     border-radius: 10px;
     color: rgb(247, 247, 247);
 }
+
+/*----------경주 글씨크기 변경부분----------*/
+
+.normalSize{
+    display: block;
+}
+.smallSize{
+    display: none;
+}
+
+/*---------------비행기 시간 표---------------*/
+.flight{
+    width:100%;
+}
+.flight table{
+    margin: 20px auto;
+    width: 35%;
+    border-collapse: collapse;
+}
+
+.flight table td{
+    height: 50px;
+    color: rgb(63, 63, 63);
+}
+.flight table th{
+    height: 32px;
+    font-size:16px;
+    color: rgb(75, 75, 75);
+}
+.flight table tr{
+    border-bottom: 2px solid white;
+}
+.flight table tr td:first-child{
+    width: 30%;
+    font-size: 14px;
+    background-color: #ffe9ae;
+}
+.flight table tr td:nth-child(2){
+    font-size: 14px;
+    background-color: rgb(231, 231, 231);
+}
+
+.flight table i{
+    color: rgb(255, 196, 0);
+}
+
+
 
 /*---------------------팁-------------------*/
 
@@ -192,9 +223,6 @@ li:hover {
 
 
 /*-----------------------------모달-------------------------*/
-.open_button{
-    display: none;
-}
 .modal{
     position: fixed;
     top: 0;
@@ -260,17 +288,13 @@ li:hover {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
     display: flex;
     width: 800px;
 }
 
-.korea_img{
+.korea_map img{
     width: 50%;
-    position: relative;
-}
-.korea_img img{
-    width: 100%;
-    filter: drop-shadow(3px 3px 6px rgb(185, 185, 185));
 }
 .korea_sub{
     width: 50%;
@@ -281,36 +305,19 @@ li:hover {
 }
 
 .korea_sub_text h3{
-    /* color: rgb(102, 102, 102); */
-    color: var(--color-main);
-    font-size: 41px;
+    color: rgb(102, 102, 102);
+    font-size: 40px;
     margin: 30px 0;
-    font-family: 'Roboto', sans-serif;
 }
 .korea_sub_text p{
     font-size: 18px;
     margin: 0 auto;
-    line-height: 1.5;
-    font-family: 'Roboto', sans-serif;
-}
-.korea_sub_text p:nth-child(2){
-    /* font-weight: bold; */
-    font-size: 19px;
-    color: rgb(100, 100, 100);
+    color: rgb(63, 63, 63);
+    line-height: 1.4;
 }
 .korea_sub_text p:nth-child(3){
     padding-top: 30px;
     font-size: 17px;
-    margin: 0 auto;
-    color: rgb(119, 119, 119);
-}
-
-.korea_sub_text span{
-    /* color:rgb(250, 131, 196); */
-    text-decoration: underline var(--color-sub);
-    text-decoration-thickness: 1.5px;
-    text-underline-offset:3.4px;
-    /* font-weight: bold; */
 }
 .korea_city{
     padding: 5px;
@@ -320,21 +327,20 @@ li:hover {
     position: absolute;
     font-size: 22px;
     text-shadow: 2px 2px 1px rgb(255, 224, 46);
-    text-decoration: none;
-    cursor: pointer;
+
 }
 
 .seoul{
     top: 110px;
-    left: 100px;
+    left: 505px;
 }
 .busan{
     top: 395px;
-    left: 235px;
+    left: 640px;
 }
 .gyeongju{
     top: 305px;
-    left: 225px;
+    left: 625px;
 }
 
 /*---------------------추천장소 / 카드--------------------*/
@@ -344,7 +350,7 @@ li:hover {
     text-align: center;
     font-size: 55px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 20px;
     color: var(--color-main);
 }
@@ -412,20 +418,13 @@ li:hover {
 .card_text a{
     display: inline-block;
     text-decoration: none;
+    color: rgb(238, 185, 10);
     font-weight: bold;
     margin-top: 5px;
     position: absolute;
-    font-size: 15px;
-}
-.googleMap{
-    color: rgb(238, 185, 10);
     right: 5px;
     bottom: 20px;
-}
-.naverMap{
-    color: rgb(71, 204, 9);
-    left: 5px;
-    bottom: 20px;
+    font-size: 15px;
 }
 
 .busanpass {
@@ -443,7 +442,7 @@ li:hover {
     border: 1px solid rgb(255, 120, 71);
 }
 
-/*------------------------웨딩홀 위치----------------------*/
+/*------------------------위치----------------------*/
 .map_wrap{
     width: 1200px;
     margin: 0 auto;
@@ -473,63 +472,7 @@ li:hover {
     font-weight: bold;
 }
 
-/*----------페리----------------------------*/
 
-   .ferry_wrap{
-    width: 1200px;
-    margin: 0 auto;
-}
-.ferry_item{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.ferry_title{
-    width:600px;
-    text-align: center;
-}
-.ferry_title h4{
-    font-size: 35px;
-    padding: 25px;
-    font-family: 'Roboto', sans-serif;
-    color:#459cff
-}
-.ferry_title img{
-    width: 400px;
-}
-.ferry_text{
-    width:600px;
-    /* text-align: center; */
-    padding:5px;
-    font-family: 'Roboto', sans-serif;
-    color:#535353;
-    line-height: 1.4;
-}
-.ferry_text h5{
-    font-size: 21px;
-    padding:4px 0;
-}
-.ferry_text hr{
-    border: none;
-    border-top: 1px solid rgb(161, 161, 161);
-    margin: 0 0 7px;
-}
-.ferry_text a{
-    text-decoration: none;
-    margin: 10px 0;
-    padding: 4px;
-    border-radius: 3px;
-    /* font-weight: bold; */
-    color: rgb(121, 121, 121);
-    display: inline-block;
-    background-color: #fff12d;
-    font-size: 15px;
-    font-family: 'Rubik', sans-serif;
-}
-.ferry_text img{
-    width: 100%;
-}
 
 
 
@@ -546,26 +489,47 @@ li:hover {
     .nav_menu li a {
         font-size: 18px;
     }
+    
+
+    /*----------경주 글씨크기 변경부분----------*/
+
+    .normalSize{
+        display: block;
+    }
+    .smallSize{
+        display: none;
+    }
+
+    /*---------------비행기 시간 표---------------*/
+    .flight table{
+        width: 57%;
+    }
+    .flight table tr td:first-child{
+        width: 30%;
+        font-size: 14px;
+    }
+
+    
     .content {
         width: 870px;
     }
 
     .korea_map{
-    width: 800px;
+    width: 750px;
     }
     .korea_sub{
-        padding-left: 10px;
+        padding-left: 35px;
     }
     
     .korea_sub_text h3{
-        font-size: 38px;
+        font-size: 30px;
         margin: 20px 0;
     }
     .korea_sub_text p{
         font-size: 18px;
-    }
-    .korea_sub_text p:nth-child(2){
-        font-size: 18px;
+        margin: 0 auto;
+        color: rgb(63, 63, 63);
+        line-height: 1.4;
     }
     .korea_sub_text p:nth-child(3){
         padding-top: 20px;
@@ -577,16 +541,16 @@ li:hover {
     }
 
     .seoul{
-        top: 115px;
-        left: 100px;
+        top: 100px;
+        left: 470px;
     }
     .busan{
-        top: 400px;
-        left: 240px;
+        top: 370px;
+        left: 600px;
     }
     .gyeongju{
-        top: 305px;
-        left: 230px;
+        top: 290px;
+        left: 590px;
     }
 
     .card {
@@ -653,27 +617,6 @@ li:hover {
         line-height: 1.5;
         font-size: 16px;
     }
-
-    /*----------페리----------------------------*/
-
-    .ferry_wrap{
-        width: 700px;
-    }
-    .ferry_title{
-        width:350px;
-    }
-    .ferry_title h4{
-        font-size: 26px;
-        padding: 25px 0 10px;
-        margin: 0;
-    }
-    .ferry_title img{
-        width: 100%;
-    }
-    .ferry_text{
-        width:350px;
-    
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -685,6 +628,9 @@ li:hover {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+    }
+    .table_wrap table{
+        font-size: 12px;
     }
 
     .nav_menu {
@@ -719,42 +665,66 @@ li:hover {
         display: flex;
     }
 
+    /*----------인덱스----------*/
+
+    .normalSize{
+        display: none;
+    }
+    .smallSize{
+        display: block;
+        font-size: 12px;
+    }
+
+    /*---------------비행기 시간 표---------------*/
+    .flight table{
+        margin: 20px auto;
+        width: 90%;
+    }
+    .flight table tr td:first-child{
+        width: 20%;
+        font-size: 14px;
+    }
+
+
+
+    .busan_map{
+        margin: 0 auto;
+        width:400px;
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     
-    /*------------------지역추천 / 지도--------------------*/
     .korea_map{
-        width: 375px;
+        width: 450px;
         flex-wrap: wrap;
         margin-top: 50px;
         margin-bottom: 100px;
     }
     .korea_sub{
-        width: 370px;
+        width: 440px;
         margin: 0 auto;
-        margin-bottom: 20px;
-        justify-content: center;
         padding-right: 0px;
         padding-left: 0px;
     }
-    .korea_img{
+    .korea_map img{
         width: 300px;
         margin:0 auto;
-        margin-top: 12px;
+        margin-top: 20px;
     }
     
     .korea_sub_text h3{
-        font-size: 35px;
-        margin: 18px 0;
+        font-size: 30px;
+        margin: 20px 0;
     }
     .korea_sub_text p{
+        font-size: 17px;
         margin: 0 auto;
         color: rgb(63, 63, 63);
         line-height: 1.4;
     }
-    .korea_sub_text p:nth-child(2){
-        font-size: 18px;
-    }
     .korea_sub_text p:nth-child(3){
-        padding-top: 8px;
+        padding-top: 20px;
         font-size: 16px;
     }
     .korea_city{
@@ -763,16 +733,16 @@ li:hover {
     }
 
     .seoul{
-        top: 75px;
-        left: 75px;
+        top: 335px;
+        left: 150px;
     }
     .busan{
-        top: 290px;
-        left: 160px;
+        top: 550px;
+        left: 230px;
     }
     .gyeongju{
-        top: 225px;
-        left: 145px;
+        top: 485px;
+        left: 220px;
     }
 
     /*-----------지역추천--------------*/
@@ -781,13 +751,7 @@ li:hover {
         width: 100%;
         font-size: 40px;
     }
-    .busan_map{
-        margin: 0 auto;
-        width:400px;
-        display: block;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+
     .gyeongju h2{
         width: 360px;
     }
@@ -844,7 +808,6 @@ li:hover {
         flex-wrap: wrap;
         margin: 60px 0;
         padding: 20px;
-        padding-bottom: 40px;
     }
     .service_text{
         width: 380px;
@@ -852,6 +815,10 @@ li:hover {
     .service_img{
         width: 340px;
     }
+    /*
+    .service_item img:nth-child(2){
+        height: 220px;
+    }*/
     .service_item h2{
         margin: 20px 0;
         font-size: 23px;
@@ -897,32 +864,6 @@ li:hover {
     .map_text p{
         line-height: 1.5;
         padding: 5px 0;
-    }
-
-
-    /*----------페리----------------------------*/
-
-    .ferry_wrap{
-        width: 350px;
-        flex-direction: column;
-    }
-    .ferry_item{
-        margin: 0 auto;
-        flex-wrap: wrap;
-    }
-    .ferry_title{
-        width:350px;
-    }
-    .ferry_title h4{
-        font-size: 26px;
-        padding: 25px;
-    }
-    .ferry_title img{
-        width: 100%;
-    }
-    .ferry_text{
-        width:350px;
-    
     }
 
     
