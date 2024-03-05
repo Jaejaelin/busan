@@ -297,7 +297,7 @@ li {
     position: absolute;
     font-size: 22px;
     text-shadow: 2px 2px 1px rgb(255, 224, 46);
-
+    text-decoration: none;
 }
 
 .seoul{
