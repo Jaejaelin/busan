@@ -9,6 +9,175 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css" type="text/css">
+    <style>
+        .location-menu {
+            width: 900px;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        
+        .location-menu li{
+            width: 100px;
+            height: 132px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .cityPic{
+            width:100px;
+            height:100px;
+            overflow: hidden;
+            border-radius: 50px;
+        }
+        .location-menu li p{
+            font-weight: bold;
+            margin-top: 4px;
+            font-size: 15px;
+            color: rgb(90, 90, 90);
+        }
+        .location-menu li img{
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        .cityTitle{
+            width: 490px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 56px 0;
+            margin: 0 auto;
+            
+        }
+        .cityTitle p{
+            font-size:42px;
+            color:rgb(105, 105, 105);
+            font-weight: bold;
+        }
+        .cityTitle p i{
+            font-size:30px;
+        }
+
+        @media screen and (max-width: 1279px) {
+        .location-menu {
+            width: 100%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        a{
+            padding: 0 12px;
+        }
+        .location-menu li{
+            width: 90px;
+            height: 130px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .cityPic{
+            width: 90px;
+            height: 90px;
+            overflow: hidden;
+            border-radius: 50px;
+        }
+        .location-menu li p{
+            font-weight: bold;
+            margin-top: 4px;
+            font-size: 15px;
+            color: rgb(90, 90, 90);
+        }
+        .location-menu li img{
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        .cityTitle{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 56px 0;
+            margin: 0 auto;
+        }
+        .cityTitle p{
+            font-size:30px;
+            color:rgb(105, 105, 105);
+            font-weight: bold;
+        }
+        .cityTitle p i{
+            font-size:20px;
+        }
+        }
+
+        @media screen and (max-width: 768px) {
+        .location-menu {
+            width: 100%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        a{
+            padding: 0 12px;
+        }
+        .location-menu li{
+            width: 80px;
+            height: 115px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .cityPic{
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            border-radius: 50px;
+        }
+        .location-menu li p{
+            font-weight: bold;
+            margin-top: 4px;
+            font-size: 13px;
+            color: rgb(90, 90, 90);
+        }
+        .cityTitle{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 56px 0;
+            margin: 0 auto;
+        }
+        .cityTitle p{
+            font-size:30px;
+            color:rgb(105, 105, 105);
+            font-weight: bold;
+        }
+        .cityTitle p i{
+            font-size:20px;
+        }
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -22,52 +191,193 @@
                 <a href="./index.html">Perleberg</a>
             </div>
             <ul class="nav_menu">
-                <a href="./index.html"><li>HOME</li></a>
-                <a href="./location.html"><li>LOCATION</li></a>
-                <a href="./trip.html"><li>TRIP</li></a>
-                <a href="./ferry.html"><li>FERRY</li></a>
+                <a href="./index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="./location.html">
+                    <li>LOCATION</li>
+                </a>
+                <a href="./trip.html">
+                    <li>TRIP</li>
+                </a>
+                <a href="./ferry.html">
+                    <li>FERRY</li>
+                </a>
             </ul>
             <a href="#" class="nav_icon">
                 <i class="fa-solid fa-bars"></i>
             </a>
         </div>
     </div>
-    
+
+    <ul class="location-menu">
+        <a href="#citySeoul">
+            <li>
+                <div class="cityPic">
+                    <img src="./images/seoulpic.PNG" alt="">
+                </div>
+                <p>SEOUL</p>
+            </li>
+        </a>
+        <a href="#cityIncheon">
+            <li>
+                <div class="cityPic">
+                    <img src="./images/templepic.PNG" alt="">
+                </div>
+                <p>TEMPEL</p>
+            </li>
+        </a>
+        <a href="#cityGyeongju">
+            <li>
+                <div class="cityPic">
+                    <img src="./images/gyeongjupic.PNG" alt="">
+                </div>
+                <p>GYEONGJU</p>
+            </li>
+        </a>
+        <a href="#cityBusan">
+            <li>
+                <div class="cityPic">
+                    <img src="./images/busanpic.PNG" alt="">
+                </div>
+                <p>BUSAN</p>
+            </li>
+        </a>
+        <a href="#wedding">
+            <li>
+                <div class="cityPic">
+                    <img src="./images/weddingpic.PNG" alt="">
+                </div>
+                <p>WEDDING</p>
+            </li>
+        </a>
+    </ul>
+
+
+    <!-----------------------------서울---------------------------------------->
+
+    <div class="cityTitle" id="citySeoul">
+        <p><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Seoul</p>
+    </div>
 
     <div class="map_wrap">
         <div class="map_text">
-            <h2><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Unterkunft in Seoul</h2>
+            <h2>Unterkunft in Seoul</h2>
             <p>Somerset Palace Seoul</p>
-            <p>7, Yulgok-ro 2-gil, Jongno-gu,<br/> Seoul, Republic of Korea</p>
+            <p>7, Yulgok-ro 2-gil, Jongno-gu,<br /> Seoul, Republic of Korea</p>
+            <h5 class="checkTime">check in <span>15:00</span><br/>check out <span>12:00</span></h5>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.154503512037!2d126.97634848868842!3d37.574979351553445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c2031328b1%3A0xcf7b96eb26b55c41!2sSomerset%20Palace%20Seoul!5e0!3m2!1sde!2skr!4v1709663286808!5m2!1sde!2skr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.154503512037!2d126.97634848868842!3d37.574979351553445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c2031328b1%3A0xcf7b96eb26b55c41!2sSomerset%20Palace%20Seoul!5e0!3m2!1sde!2skr!4v1709663286808!5m2!1sde!2skr"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="map_wrap">
         <div class="map_text">
-            <h2><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Unterkunft in Seoul<br/><span style="line-height: 1.8;">(Für Eva, Torben)</span></h2>
+            <h2>Unterkunft in Seoul<br /><span
+                    style="line-height: 1.8;">(Für Eva, Torben)</span></h2>
             <p>Seoul Garden Hotel</p>
-            <p>58, Mapo-daero, Mapo-gu<br/> Seoul, Republic of Korea</p>
+            <p>58, Mapo-daero, Mapo-gu<br /> Seoul, Republic of Korea</p>
+            <h5 class="checkTime">check in <span>15:00</span><br/>check out <span>12:00</span></h5>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.6107634287737!2d126.94577117632235!3d37.540671725610096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98a5f00f4b03%3A0xe12e8c400dcca16c!2sSeoul%20Garden%20Hotel!5e0!3m2!1sde!2skr!4v1709663331965!5m2!1sde!2skr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.6107634287737!2d126.94577117632235!3d37.540671725610096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98a5f00f4b03%3A0xe12e8c400dcca16c!2sSeoul%20Garden%20Hotel!5e0!3m2!1sde!2skr!4v1709663331965!5m2!1sde!2skr"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+
+    <!-----------------------------템플---------------------------------------->
+
+    <div class="cityTitle" id="cityIncheon">
+        <p><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Tempel</p>
     </div>
 
     <div class="map_wrap">
         <div class="map_text">
-            <h2><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Tempel</h2>
+            <h2>Tempel</h2>
             <p>Lotus Lantern International MeditationCenter</p>
-            <p>349-60, Ganghwadong-ro, Gilsang-myeon,<br/> Ganghwa-gun, Incheon, Republic of Korea</p>
+            <p>349-60, Ganghwadong-ro, Gilsang-myeon,<br /> Ganghwa-gun, Incheon, Republic of Korea</p>
+            <h5 class="checkTime">check in <span>16:00</span><br/>check out <span>13:00</span></h5>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.0686673063!2d126.47832628871303!3d37.67109424597152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c79062976c667%3A0x57e04743af9632b3!2sLotus%20Lantern%20International%20Meditation%20Center!5e0!3m2!1sde!2skr!4v1709663355119!5m2!1sde!2skr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.0686673063!2d126.47832628871303!3d37.67109424597152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c79062976c667%3A0x57e04743af9632b3!2sLotus%20Lantern%20International%20Meditation%20Center!5e0!3m2!1sde!2skr!4v1709663355119!5m2!1sde!2skr"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+    <!-----------------------------경주---------------------------------------->
+
+    <div class="cityTitle" id="cityGyeongju">
+        <p><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Gyeongju</p>
     </div>
 
     <div class="map_wrap">
         <div class="map_text">
-            <h2><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Adresse des Hochzeitssaals</h2>
-            <p>Paledecz wedding hall</p>
-            <p>B1F, Paledecz, 24, Haeundaehaebyeon-ro<br/> 298beon-gil, Haeundae-gu, Busan</p>
+            <h2>Unterkunft in
+                Gyeongju<br /><span style="line-height: 1.8;">(Für Klaus)</span></h2>
+            <p>Hwangnamchae Stay</p>
+            <p>296-6 Hwangnam-dong, Gyeongju-si,<br /> Gyeongsangbuk-do, Republic of Korea</p>
+            <h5 class="checkTime">check in <span>15:00</span><br/>check out <span>11:00</span></h5>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52201.144285653485!2d129.05972907451658!3d35.14236486504615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688d4299f426ff%3A0xf012b9ee6bbeac8a!2zV-ybqOuUqSDtjJTroIjrk5zsi5zspojsm6jrlKntmYA!5e0!3m2!1sde!2skr!4v1709663387752!5m2!1sde!2skr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785.6056477507384!2d129.2103377449307!3d35.83667818562372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35664f56e63fe157%3A0x2cf1602d22575686!2sHwangnamchae%20Stay%201987!5e0!3m2!1sde!2skr!4v1710320106271!5m2!1sde!2skr"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="map_wrap">
+        <div class="map_text">
+            <h2>Unterkunft in Gyeongju</h2>
+            <p>Silla Gotack</p>
+            <p>22-3 Poseok-ro 1068beon-gil,<br /> Hwangnam-dong, Gyeongju-si</p>
+            <h5 class="checkTime">check in <span>16:00</span><br/>check out <span>11:00</span></h5>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785.6126974313895!2d129.21151819577295!3d35.835966257851524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35664f64342b1fbb%3A0xf89e012518f7542f!2z7Iug65286rOg7YOd!5e0!3m2!1sde!2skr!4v1710320537871!5m2!1sde!2skr"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-----------------------------부산---------------------------------------->
+
+    <div class="cityTitle" id="cityBusan">
+        <p><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Busan</p>
+    </div>
+
+    <div class="map_wrap">
+        <div class="map_text">
+            <h2>Unterkunft in Busan
+            </h2>
+            <p>Stay on the Beach</p>
+            <p>1123 jungje 1dong Haeundae-gu,<br /> Busan</p>
+            <h5 class="checkTime">check in <span>16:00</span><br/>check out <span>11:00</span></h5>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d484.87418896499304!2d129.16674306402325!3d35.160816882443264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688d98b94a7dd3%3A0x1491cdc85213cb7!2z7ZW07Jq064yAIO2RuOultOyngOyYpOyLnO2LsA!5e0!3m2!1sde!2skr!4v1710326117938!5m2!1sde!2skr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <!-----------------------------웨딩홀---------------------------------------->
+
+    <div class="cityTitle" id="wedding">
+        <p><i class="fa-solid fa-location-dot" style="color: rgb(250, 85, 85);"></i> Wedding Hall</p>
+    </div>
+
+    <div class="map_wrap">
+        <div class="map_text">
+            <h2>Adresse des Hochzeitssaals
+            </h2>
+            <p>Paledecz wedding hall</p>
+            <p>B1F, Paledecz, 24, Haeundaehaebyeon-ro<br /> 298beon-gil, Haeundae-gu, Busan</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52201.144285653485!2d129.05972907451658!3d35.14236486504615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688d4299f426ff%3A0xf012b9ee6bbeac8a!2zV-ybqOuUqSDtjJTroIjrk5zsi5zspojsm6jrlKntmYA!5e0!3m2!1sde!2skr!4v1709663387752!5m2!1sde!2skr"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 
@@ -84,7 +394,10 @@
 
         function scrollTopFunction() {
             // 부드러운 스크롤 효과로 페이지 상단으로 이동
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
     </script>
 </body>
